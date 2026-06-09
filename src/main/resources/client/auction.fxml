@@ -3,48 +3,30 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<?import java.awt.TextField?>
-<?import java.awt.TextArea?>
-<?import java.awt.Label?>
 <BorderPane xmlns:fx="http://javafx.com/fxml"
-            fx:controller="client.ClientController">
+            fx:controller="com.ijse.client.ClientController">
 
     <top>
         <VBox spacing="10">
-
-            <Label fx:id="itemLabel"
-                   text="Item"/>
-
-            <Label fx:id="highestBidLabel"
-                   text="Highest Bid"/>
-
+            <Label fx:id="itemLabel" text="Item"/>
+            <Label fx:id="highestBidLabel" text="Highest Bid"/>
         </VBox>
     </top>
 
     <center>
-
-        <TextArea fx:id="historyArea"
-                  editable="false"/>
-
+        <TextArea fx:id="historyArea" editable="false"/>
     </center>
 
     <bottom>
-
         <VBox spacing="10">
 
-            <TextField fx:id="bidField"
-                       promptText="Enter Bid"/>
+            <TextField fx:id="bidField" promptText="Enter Bid"/>
 
-            <Button text="Place Bid"
-                    onAction="#placeBid"
-                    fx:id="bidButton"/>
+            <Button text="Place Bid" onAction="#placeBid" fx:id="bidButton"/>
 
-            <Button text="Disconnect"
-                    onAction="#disconnect"
-                    fx:id="disconnectButton"/>
+            <Button text="Disconnect" onAction="#disconnect" fx:id="disconnectButton"/>
 
         </VBox>
-
     </bottom>
 
 </BorderPane>

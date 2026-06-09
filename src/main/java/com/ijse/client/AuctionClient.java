@@ -1,4 +1,4 @@
-package com.ijse.AuctionClient;
+package com.ijse.client;
 
 public class AuctionClient {
 }

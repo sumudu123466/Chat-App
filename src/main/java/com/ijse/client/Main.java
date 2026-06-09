@@ -1,4 +1,4 @@
-package com.ijse.AuctionClient;
+package com.ijse.client;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,15 +12,12 @@ public class Main extends Application {
 
         FXMLLoader loader =
                 new FXMLLoader(
-                        getClass().getResource("client/auction.fxml"));
+                        getClass().getResource("/client/auction.fxml"));
 
-        Scene scene =
-                new Scene(loader.load());
+        Scene scene = new Scene(loader.load());
 
         stage.setTitle("Auction Client");
-
         stage.setScene(scene);
-
         stage.show();
     }
 
